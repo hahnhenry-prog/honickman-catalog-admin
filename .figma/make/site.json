@@ -1,0 +1,10 @@
+{
+  "description": "Manage and organize product catalogs efficiently with tabbed views for Products, Brands, Sub-Brands, and Packages, streamlining backend data handling.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
