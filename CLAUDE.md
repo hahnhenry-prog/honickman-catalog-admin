@@ -108,7 +108,7 @@ these values.** If one looks wrong, say so — do not silently change it in code
 | **Canada Dry** | CDDV, CDP | primary | `#0e4636` |
 | | | accent | `#d0aa29` (Canada Dry gold) |
 | **Honickman** | parent brand, internal tools | primary | `#de8500` |
-| | | accent | `#283a4e` (corporate navy) |
+| | | accent | `#283a4d` (corporate navy) |
 
 Shared across all themes: surface `#ffffff`, border `#e2e2e2`,
 text primary `#242424`, text secondary `#555555`, text muted `#999999`.
@@ -120,7 +120,9 @@ text primary `#242424`, text secondary `#555555`, text muted `#999999`.
 - **Canada Dry `#0e4636`** — the header background used by both Canada Dry
   catalog apps; consistent with the green in the logo artwork.
 - **Honickman `#de8500`** — sampled from `TheHonickmanCompanies-1.svg`;
-  navy `#283a4e` sampled from the Honickman Total Wellness site.
+  navy `#283a4d` read from the same SVG. Brand files beat screenshots:
+  a screenshot of the site reads `#283a4e`, one point off from colour-
+  profile conversion. Always prefer the source artwork.
 
 ## Rules
 
