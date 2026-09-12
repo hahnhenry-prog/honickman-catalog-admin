@@ -105,8 +105,8 @@ these values.** If one looks wrong, say so — do not silently change it in code
 | | | primary dark (hover) | `#0e3585` |
 | | | primary light | `#1f65c7` |
 | | | accent | `#e4003a` (Pepsi red) |
-| **Canada Dry** | CDDV, CDP | primary | `#0e4636` |
-| | | accent | `#d0aa29` (Canada Dry gold) |
+| **Canada Dry** | CDDV, CDP | primary | `#144937` |
+| | | accent | `#d0a82a` (Canada Dry gold) |
 | **Honickman** | parent brand, internal tools | primary | `#de8500` |
 | | | accent | `#283a4d` (corporate navy) |
 
@@ -117,8 +117,9 @@ text primary `#242424`, text secondary `#555555`, text muted `#999999`.
 
 - **Pepsi `#174a92`** — sampled from the flat fill of the PCNY logo artwork
   (`PCNY_logo.png`, lossless PNG, rgb(23, 74, 146), 57% of the image).
-- **Canada Dry `#0e4636`** — the header background used by both Canada Dry
-  catalog apps; consistent with the green in the logo artwork.
+- **Canada Dry `#144937`** — the field colour of CDP_Horizontal_Logo_Grn.png;
+  gold `#d0a82a` from the same artwork. Replaces #0e4636, which came from a
+  Figma Make header rather than brand artwork.
 - **Honickman `#de8500`** — sampled from `TheHonickmanCompanies-1.svg`;
   navy `#283a4d` read from the same SVG. Brand files beat screenshots:
   a screenshot of the site reads `#283a4e`, one point off from colour-
