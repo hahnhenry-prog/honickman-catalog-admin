@@ -142,3 +142,20 @@ text primary `#242424`, text secondary `#555555`, text muted `#999999`.
    shade is how the palette drifted in the first place.
 
 The machine-readable copy of this palette lives in `honickman-ui/src/tokens/`.
+
+## Logo assets
+
+Company logos currently in use are web-sourced placeholders, not production
+artwork. Proper vectors are expected from the designer (~week of 2026-09-19).
+
+| Company | Current source | Quality |
+|---|---|---|
+| Honickman | `TheHonickmanCompanies.svg` | true vector |
+| PCNY | `Pepsi-NY.svg` | PNG inside an SVG wrapper, 1368x239 |
+| PNB | `PNB.webp` | lossy, 762x175 |
+| CDDV | `CDDV.webp` | lossy, 995x216 |
+| CDP | `CDP.webp` | lossy, 933x195 |
+
+Logos are referenced through a brand -> asset map, so replacing these is a file
+swap with no code change. Do not sample brand colours from the lossy files.
+
