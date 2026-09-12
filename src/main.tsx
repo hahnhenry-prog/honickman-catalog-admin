@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client'
+import { ThemeProvider } from '@honickman/ui'
 import App from './App'
 import './index.css'
 
@@ -51,6 +52,11 @@ const w = window as any;
 if (!w.__reactRoot) w.__reactRoot = ReactDOM.createRoot(container);
 w.__reactRoot.render(
   <React.StrictMode>
-    <Root />
+    {/* This tool manages every company's data on Honickman's behalf, so it is
+        always Honickman-branded. A per-bottler admin would be a separate app
+        with its own brand here — not a runtime switch end users can change. */}
+    <ThemeProvider brand="honickman">
+      <Root />
+    </ThemeProvider>
   </React.StrictMode>,
 )
