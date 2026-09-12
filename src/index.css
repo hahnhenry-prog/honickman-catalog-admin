@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 @import 'tailwindcss';
 
 html,
@@ -9,7 +9,7 @@ body,
 }
 
 @theme inline {
-  --color-background: #f4f6f8;
+  --color-background: #f4f6f9;
   --color-foreground: #1a2533;
   --color-card: #ffffff;
   --color-card-foreground: #1a2533;
@@ -25,7 +25,7 @@ body,
   --color-ring: #de8500;
   --radius: 2px;
 
-  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Barlow Condensed', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 }
