@@ -106,7 +106,7 @@ these values.** If one looks wrong, say so — do not silently change it in code
 | | | primary light | `#1f65c7` |
 | | | accent | `#e4003a` (Pepsi red) |
 | **Canada Dry** | CDDV, CDP | primary | `#0e4636` |
-| | | accent | `#c8a93a` (Canada Dry gold) |
+| | | accent | `#d0aa29` (Canada Dry gold) |
 | **Honickman** | parent brand, internal tools | primary | `#de8500` |
 | | | accent | `#283a4d` (corporate navy) |
 
@@ -146,5 +146,3 @@ The machine-readable copy of this palette lives in `honickman-ui/src/tokens/`.
   brand color. They need regenerating in `#174a92`.
 - The catalog frontend uses `#2ea3f2` for filter highlights and badges on
   every brand, including Canada Dry. It should use the active theme's primary.
-- The Canada Dry accent gold `#c8a93a` is the library's value; the logo
-  artwork samples closer to `#d3a827`. Needs a decision before it's relied on.
