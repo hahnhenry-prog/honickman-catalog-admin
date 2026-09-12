@@ -184,3 +184,30 @@ push, and nothing moves.
 Note for Figma Make sessions: brand colours, fonts and logos can no longer be
 fixed from inside an app. They live in honickman-ui only.
 
+## Sizing scale
+
+Sizing lives in `@honickman/ui/scale.css`, imported by each app after
+Tailwind. It is deliberately NOT part of the theme: colours and typefaces vary
+by brand, sizing does not.
+
+| Step | Value | Use |
+|---|---|---|
+| `text-2xs` | 9px | diagram and planogram labels, not prose |
+| `text-xs` | 11px | captions, table meta |
+| `text-sm` | 12px | secondary UI text |
+| `text-base` | 13px | default body / UI |
+| `text-md` | 14px | emphasised body |
+| `text-lg` | 16px | section headings |
+| `text-xl` | 18px | page headings |
+| `text-2xl` / `text-3xl` | 22 / 28px | display |
+
+Radii: `rounded-sm` 2px, `rounded-md` 4px, `rounded-lg` 6px, `rounded-xl` 10px,
+`rounded-2xl` 14px. Spacing unit is 4px, so `p-4` is 16px as before.
+
+**Prefer a named step over an arbitrary value.** `text-[13px]` and
+`borderRadius: 6` are what the scale replaces. If no step fits, that is worth
+raising rather than inventing a one-off.
+
+Existing code still contains ad-hoc sizes from before the scale existed; they
+are being converted as components move into the library, not in one sweep.
+

@@ -16,7 +16,7 @@ importers:
         version: 3.1127.0
       '@honickman/ui':
         specifier: github:hahnhenry-prog/honickman-ui
-        version: https://codeload.github.com/hahnhenry-prog/honickman-ui/tar.gz/72d905831425b6cf50b57610ab5b0467b8680e47(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: https://codeload.github.com/hahnhenry-prog/honickman-ui/tar.gz/229d395e8ae498e724abf6328fd15d0add3e0e2a(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@supabase/supabase-js':
         specifier: ^2.115.0
         version: 2.115.0
@@ -145,8 +145,8 @@ packages:
   '@emnapi/wasi-threads@1.2.0':
     resolution: {integrity: sha512-N10dEJNSsUx41Z6pZsXU8FjPjpBEplgH24sfkmITrBED1/U2Esum9F3lfLrMjKHHjmi557zQn7kR9R+XWXu5Rg==}
 
-  '@honickman/ui@https://codeload.github.com/hahnhenry-prog/honickman-ui/tar.gz/72d905831425b6cf50b57610ab5b0467b8680e47':
-    resolution: {gitHosted: true, integrity: sha512-Yks0MRTxNByxwoUfXa+QH81V9g+1xYFJqqOHjXG6Ia7RcpzUhoMLKhJabuA/8F4AoZzPvdjLu9IFyNFtSP8l/w==, tarball: https://codeload.github.com/hahnhenry-prog/honickman-ui/tar.gz/72d905831425b6cf50b57610ab5b0467b8680e47}
+  '@honickman/ui@https://codeload.github.com/hahnhenry-prog/honickman-ui/tar.gz/229d395e8ae498e724abf6328fd15d0add3e0e2a':
+    resolution: {gitHosted: true, integrity: sha512-fPT2af1M1On/BBYPTgeo5FWQ1s6ze/Pxj2nQiUb64bcZxpfKfluDoPzooOsg68Tkw0sZktuj/bG2G3lb46XEwg==, tarball: https://codeload.github.com/hahnhenry-prog/honickman-ui/tar.gz/229d395e8ae498e724abf6328fd15d0add3e0e2a}
     version: 0.1.0
     peerDependencies:
       react: '>=18'
@@ -949,7 +949,7 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@honickman/ui@https://codeload.github.com/hahnhenry-prog/honickman-ui/tar.gz/72d905831425b6cf50b57610ab5b0467b8680e47(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@honickman/ui@https://codeload.github.com/hahnhenry-prog/honickman-ui/tar.gz/229d395e8ae498e724abf6328fd15d0add3e0e2a(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
