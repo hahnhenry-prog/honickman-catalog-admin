@@ -160,3 +160,27 @@ artwork. Proper vectors are expected from the designer (~week of 2026-09-19).
 Logos are referenced through a brand -> asset map, so replacing these is a file
 swap with no code change. Do not sample brand colours from the lossy files.
 
+## Updating the shared library
+
+Apps install `@honickman/ui` from GitHub and pin an exact commit in their
+lockfile, so library changes are invisible until an app explicitly updates.
+That pinning is deliberate: a bad library change cannot silently break every
+app at once.
+
+```bash
+# in honickman-ui
+pnpm build                      # REQUIRED — dist/ is committed; apps read it,
+                                # not src/. Skipping this ships stale code.
+git commit -am "..." && git push
+
+# in each app that should pick the change up
+pnpm update @honickman/ui
+git commit -am "chore: update @honickman/ui" && git push
+```
+
+The `pnpm build` step is the easy one to forget. Symptom: you change a colour,
+push, and nothing moves.
+
+Note for Figma Make sessions: brand colours, fonts and logos can no longer be
+fixed from inside an app. They live in honickman-ui only.
+
