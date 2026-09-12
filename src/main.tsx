@@ -1,7 +1,15 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client'
+import { ThemeProvider, BRANDS, type BrandId } from '@honickman/ui'
 import App from './App'
 import './index.css'
+
+/** Which brand to theme as. Defaults to the parent company; override with
+ *  ?brand=pcny | pnb | cddv | cdp for re-skinning this same admin per bottler. */
+function brandFromUrl(): BrandId {
+  const q = new URLSearchParams(window.location.search).get('brand')
+  return q && q in BRANDS ? (q as BrandId) : 'honickman'
+}
 
 const ADMIN_PASSWORD = import.meta.env.VITE_SITE_PASSWORD as string | undefined;
 
@@ -51,6 +59,8 @@ const w = window as any;
 if (!w.__reactRoot) w.__reactRoot = ReactDOM.createRoot(container);
 w.__reactRoot.render(
   <React.StrictMode>
-    <Root />
+    <ThemeProvider brand={brandFromUrl()}>
+      <Root />
+    </ThemeProvider>
   </React.StrictMode>,
 )

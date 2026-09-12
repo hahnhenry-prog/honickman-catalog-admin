@@ -108,7 +108,7 @@ these values.** If one looks wrong, say so — do not silently change it in code
 | **Canada Dry** | CDDV, CDP | primary | `#0e4636` |
 | | | accent | `#d0aa29` (Canada Dry gold) |
 | **Honickman** | parent brand, internal tools | primary | `#de8500` |
-| | | accent | `#283a4d` (corporate navy) |
+| | | accent | `#283a4e` (corporate navy) |
 
 Shared across all themes: surface `#ffffff`, border `#e2e2e2`,
 text primary `#242424`, text secondary `#555555`, text muted `#999999`.
@@ -119,7 +119,8 @@ text primary `#242424`, text secondary `#555555`, text muted `#999999`.
   (`PCNY_logo.png`, lossless PNG, rgb(23, 74, 146), 57% of the image).
 - **Canada Dry `#0e4636`** — the header background used by both Canada Dry
   catalog apps; consistent with the green in the logo artwork.
-- **Honickman `#de8500`** — sampled from `TheHonickmanCompanies-1.svg`.
+- **Honickman `#de8500`** — sampled from `TheHonickmanCompanies-1.svg`;
+  navy `#283a4e` sampled from the Honickman Total Wellness site.
 
 ## Rules
 
@@ -139,10 +140,3 @@ text primary `#242424`, text secondary `#555555`, text muted `#999999`.
    shade is how the palette drifted in the first place.
 
 The machine-readable copy of this palette lives in `honickman-ui/src/tokens/`.
-
-## Known open items
-
-- `pcny-favicon.png` and `pnb-favicon.png` are `#0065c3`, which matches no
-  brand color. They need regenerating in `#174a92`.
-- The catalog frontend uses `#2ea3f2` for filter highlights and badges on
-  every brand, including Canada Dry. It should use the active theme's primary.

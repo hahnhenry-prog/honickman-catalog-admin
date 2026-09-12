@@ -14,6 +14,9 @@ importers:
       '@aws-sdk/s3-request-presigner':
         specifier: ^3.1127.0
         version: 3.1127.0
+      '@honickman/ui':
+        specifier: link:../honickman-ui
+        version: link:../honickman-ui
       '@supabase/supabase-js':
         specifier: ^2.115.0
         version: 2.115.0
