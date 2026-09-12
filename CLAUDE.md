@@ -82,7 +82,7 @@ The AWS secret key and GitHub token are not recorded here for security — retri
 - Frontend project: `honickman-catalog-frontend`
 - Team/org: `henry-6e59`
 - Admin production URL: `https://honickman-catalog-admin.vercel.app`
-- Frontend production URL: `https://honickman-catalog-frontend.vercel.app`
+- Frontend production URL: `https://honickman-catalog.vercel.app`
 - AWS environment variables are stored in the admin Vercel project
 - Supabase anon key and URL are stored in the frontend Vercel project
 - Both deploy automatically when `main` branch is pushed to their respective GitHub repos
